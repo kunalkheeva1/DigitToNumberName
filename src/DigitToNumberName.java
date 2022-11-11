@@ -6,7 +6,12 @@ public class DigitToNumberName {
         System.out.println("Enter the number to be displayed: ");
         int input = sc.nextInt();
 
+        //changing input to string so that can be traversed
         String changed = Integer.toString(input);
+
+        //during traversal of each character, changing the character to its numeric value
+        //to avoid the ascii code confusion.
+        //then by switch statement print their names
 
         for(int i=0; i<changed.length(); i++){
             char c = changed.charAt(i);
